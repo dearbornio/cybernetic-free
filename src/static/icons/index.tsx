@@ -8,6 +8,8 @@ import IconInstagram from "./icon-instagram.svg";
 import IconTwitter from "./icon-twitter.svg";
 import IconLinkedIn from "./icon-linkedin.svg";
 import IconGithub from "./icon-github.svg";
+import IconPhone from "./icon-phone.svg";
+import IconEmail from "./icon-email.svg"
 
 export const icons = {
     arrowDown: IconArrowDown,
@@ -18,6 +20,8 @@ export const icons = {
     twitter: IconTwitter,
     linkedin: IconLinkedIn,
     github: IconGithub,
+    phone: IconPhone,
+    email: IconEmail
 };
 
 type IconName = {

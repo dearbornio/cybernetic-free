@@ -8,6 +8,7 @@ export type ParallaxImageProps = {
     content?: {
         title?: string;
         paragraph?: string;
+        href?: string;
     };
 };
 
@@ -19,10 +20,11 @@ export const ParallaxImage: FC<ParallaxImageProps> = ({ image, content }) => {
 
     return (
         <S.ParallaxImageStyled $bgImage={image}>
-            {content.title && content.paragraph && (
+            {content.title && content.paragraph && content.href && (
                 <S.ParallaxImageContent>
                     {content.title && <h1>{content.title}</h1>}
                     {content.paragraph && <p>{content.paragraph}</p>}
+                    {content.href && <a href={content.href}>Click Here To Register</a>}
                 </S.ParallaxImageContent>
             )}
         </S.ParallaxImageStyled>

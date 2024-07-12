@@ -11,7 +11,7 @@ export const Footer: FC = () => {
                 <S.FooterContainer>
                     <Logo />
                     <S.FooterContent>
-                        <p>© 2024 All rights reserved by codexcode.pl</p>
+                        <p>Developed & Hosted by <a href="https://dearborn.io">Dearborn I/O</a></p>
                     </S.FooterContent>
                 </S.FooterContainer>
                 <Socials />

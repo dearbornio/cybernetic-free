@@ -1,0 +1,97 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { Hero } from "@modules/Hero";
+import { HeroSlider3, VolleyballImg1, VolleyballImg2 } from "@static/images";
+import { ServiceCards } from "@modules/ServiceCards";
+import { Footer } from "@modules/Footer";
+---
+
+<Layout
+  title="Volleyball | Showtime Camps"
+  description="Youth Basketball and Volleyball Camps"
+>
+  <main class="page-content">
+    <Hero
+      heroType="ParallaxImage"
+      client:visible
+      data={{
+        image: HeroSlider3.src,
+        content: {
+          title: "Showtime Camps",
+          paragraph: "Camp Starts Soon",
+          href: "https://www.tickettailor.com/all-tickets/showtimecamps/rtne/1/",
+        },
+      }}
+    />
+    <ServiceCards
+      description="SHOWTIME CAMPS"
+      title="Volleyball Camp For All Age Groups"
+      client:visible
+      cards={[
+        {
+          title: "Elevate Your Skills",
+          description:
+            "Learn from Dearborn School's top basketball coaches and athletes.",
+        },
+        {
+          title: "Competitive Play",
+          description:
+            "Focuses on developing each player's individual talents while encouraging a sense of teamwork and sportsmanship.",
+        },
+        {
+          title: "Beginner Friendly",
+          description:
+            "Whether you're new to basketball or an experienced player, we have something for everyone.",
+        },
+        {
+          title: "Energetic Environment",
+          description:
+            "We have a fun and exciting environment for all ages and skill levels.",
+        },
+        {
+          title: "Community Engagement",
+          description:
+            "Join a community of passionate players and coaches dedicated to fostering a love for basketball.",
+        },
+        {
+          title: "Health and Fitness",
+          description:
+            "Promote a healthy lifestyle through basketball, with a focus on physical fitness and well-being.",
+        },
+      ]}
+    />
+
+    <Hero
+      heroType="textImage"
+      client:visible
+      data={{
+        image: {
+          src: VolleyballImg1.src,
+          width: 590,
+          height: 300,
+          alt: "Hero Image",
+        },
+        title: "Join the excitement at Showtime Volleyball Camp",
+        paragraph:
+          "Players of all skill levels can improve their game. Our camp offers student-athlete coaching and a supportive environment that fosters skill development and teamwork. Whether you're a beginner or an advanced athlete, you'll find the training and competition you need to elevate your game.",
+      }}
+    />
+    <Hero
+      heroType="textImage"
+      client:visible
+      data={{
+        switchPlaces: true,
+        image: {
+          src: VolleyballImg2.src,
+          width: 590,
+          height: 300,
+          alt: "Hero Image",
+        },
+        title: "Experience the thrill of competitive play",
+        paragraph:
+          "Get ready to spike, serve, and set your way to new heights. Reserve your spot at Showtime Volleyball Camp today and be part of an unforgettable volleyball journey.",
+      }}
+    />
+  </main>
+  <Footer />
+</Layout>

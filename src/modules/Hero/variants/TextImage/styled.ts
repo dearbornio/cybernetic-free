@@ -64,8 +64,8 @@ export const TextImageContent = styled.div`
 
     h1 {
         margin-bottom: 20px;
-        font-size: 80px;
-        line-height: 84px;
+        font-size: 55px;
+        line-height: 60px;
         letter-spacing: -1px;
 
         ${MediaQuery.max("xl")} {

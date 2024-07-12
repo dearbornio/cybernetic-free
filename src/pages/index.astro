@@ -5,36 +5,35 @@ import { Hero } from "@modules/Hero";
 ---
 
 <Layout
-    title="Cybernetic | Homepage"
-    description="YOUR META DESCRIPTION FOR SEO"
+  title="Showtime Camps | Homepage"
+  description="Showtime Camps | Basketball & Volleyball Camps"
 >
-    <main class="page-content">
-        <Hero
-            client:load
-            heroType="fullPageSlider"
-            data={[
-                {
-                    subtitle: "Cybernetic",
-                    title: "Cybernetic",
-                    background: HeroSlider1.src,
-                    paragraph:
-                        "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-                    button: {
-                        text: "Get pro version",
-                        link: "https://codexcode.store/themes/cybernetic-website-template",
-                    },
-                },
-                {
-                    subtitle: "Be Safe, Be Secure, Be Cybernetic",
-                    title: "infinite",
-                    background: HeroSlider3.src,
-                    paragraph: "",
-                    button: {
-                        text: "Take a look",
-                        link: "/infinite",
-                    },
-                },
-            ]}
-        />
-    </main>
+  <main class="page-content">
+    <Hero
+      client:load
+      heroType="fullPageSlider"
+      data={[
+        {
+          subtitle: "Showtime Camps",
+          title: "Basketball",
+          background: HeroSlider1.src,
+          paragraph: "",
+          button: {
+            text: "Read More",
+            link: "/basketball",
+          },
+        },
+        {
+          subtitle: "Showtime Camps",
+          title: "Volleyball",
+          background: HeroSlider3.src,
+          paragraph: "",
+          button: {
+            text: "Read More",
+            link: "/volleyball",
+          },
+        },
+      ]}
+    />
+  </main>
 </Layout>

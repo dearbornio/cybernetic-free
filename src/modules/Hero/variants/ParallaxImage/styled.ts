@@ -59,6 +59,19 @@ export const ParallaxImageContent = styled.div`
             line-height: 50px;
         }
     }
+        a {
+        color: ${Theme.primary};
+        max-width: 600px;
+        margin: 0 auto;
+        text-align: center;
+
+        text-decoration: underline;
+
+        ${MediaQuery.max("lg")} {
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
 
     p {
         color: ${Theme.primary};

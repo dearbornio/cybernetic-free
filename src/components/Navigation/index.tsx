@@ -11,22 +11,21 @@ export const Navigation: FC = () => {
             <S.NavigationListWrapper $isOpen={isOpen}>
                 <S.NavigationList>
                     <li>
-                        <a href="/">Cybernetic</a>
+                        <a href="/basketball">Basketball</a>
                     </li>
                     <li>
                         <a
-                            href="https://codexcode.store/themes/cybernetic-website-template"
-                            target="_blank"
+                            href="/volleyball"
                         >
-                            Pro version
+                            Volleyball
                         </a>
                     </li>
                     <li>
-                        <a href="/infinite">Infinite</a>
+                        <a href="https://www.instagram.com/showtime_basketballcamps"
+                        target="_blank"
+                        >Instagram</a>
                     </li>
-                    <li>
-                        <a href="/contact">Contact</a>
-                    </li>
+
                 </S.NavigationList>
             </S.NavigationListWrapper>
             <Hamburger

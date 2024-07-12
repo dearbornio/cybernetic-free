@@ -1,14 +1,16 @@
 import { type FC } from "react";
 import PreviewPng from "./preview.webp";
 import HeroImg from "./hero-img.webp";
-import Logo from "./logo.webp";
+import Logo from "./logo.png";
 
-import HeroSlider1 from "./hero-slider-01.webp";
+import HeroSlider1 from "./basketball.jpg";
 import HeroSlider2 from "./hero-slider-02.webp";
-import HeroSlider3 from "./hero-slider-03.webp";
+import HeroSlider3 from "./volleyball.jpg";
 
-import InfiniteImg1 from "./infinite-img-1.webp";
-import InfiniteImg2 from "./infinite-img-2.webp";
+import BasketballImg1 from "./about-image-01.jpg";
+import BasketballImg2 from "./about-image-02.jpg";
+import VolleyballImg1 from "./volleyball-image-1.jpg"
+import VolleyballImg2 from "./volleyball-image-2.jpg";
 
 export const images = {
     preview: PreviewPng,
@@ -68,6 +70,8 @@ export {
     HeroSlider1,
     HeroSlider2,
     HeroSlider3,
-    InfiniteImg1,
-    InfiniteImg2,
+    BasketballImg1,
+    BasketballImg2,
+    VolleyballImg1,
+    VolleyballImg2,
 };

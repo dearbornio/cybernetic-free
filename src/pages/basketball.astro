@@ -1,0 +1,99 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { Hero } from "@modules/Hero";
+import { HeroSlider1, BasketballImg1, BasketballImg2 } from "@static/images";
+import { ServiceCards } from "@modules/ServiceCards";
+import { Footer } from "@modules/Footer";
+import Tickets from "../components/Tickets/Basketball.astro";
+---
+
+<Layout
+  title="Basketball | Shwotime Camps"
+  description="Youth Basketball and Volleyball Camps"
+>
+  <main class="page-content">
+    <Hero
+      heroType="ParallaxImage"
+      client:visible
+      data={{
+        image: HeroSlider1.src,
+        content: {
+          title: "Showtime Camps",
+          paragraph: "Camp Starts Soon",
+          href: "https://www.tickettailor.com/all-tickets/showtimecamps/rtne/1/",
+        },
+      }}
+    />
+
+    <ServiceCards
+      description="SHOWTIME CAMPS"
+      title="Basketball Camp For All Age Groups"
+      client:visible
+      cards={[
+        {
+          title: "Elevate Your Skills",
+          description:
+            "Learn from Dearborn School's top basketball coaches and athletes.",
+        },
+        {
+          title: "Competitive Play",
+          description:
+            "Focuses on developing each player's individual talents while encouraging a sense of teamwork and sportsmanship.",
+        },
+        {
+          title: "Beginner Friendly",
+          description:
+            "Whether you're new to basketball or an experienced player, we have something for everyone.",
+        },
+        {
+          title: "Energetic Environment",
+          description:
+            "We have a fun and exciting environment for all ages and skill levels.",
+        },
+        {
+          title: "Community Engagement",
+          description:
+            "Join a community of passionate players and coaches dedicated to fostering a love for basketball.",
+        },
+        {
+          title: "Health and Fitness",
+          description:
+            "Promote a healthy lifestyle through basketball, with a focus on physical fitness and well-being.",
+        },
+      ]}
+    />
+
+    <Hero
+      heroType="textImage"
+      client:visible
+      data={{
+        image: {
+          src: BasketballImg1.src,
+          width: 590,
+          height: 300,
+          alt: "Hero Image",
+        },
+        title: "12 Years of Camp and Counting",
+        paragraph:
+          "With a reputation as the best camp in the area, we offer a basketball experience that balances skill development, competitive play, and pure fun in a supportive and energetic environment. Our camp, designed for grades K-8, focuses on developing each player's individual talents while encouraging a sense of teamwork and sportsmanship.",
+      }}
+    />
+    <Hero
+      heroType="textImage"
+      client:visible
+      data={{
+        switchPlaces: true,
+        image: {
+          src: BasketballImg2.src,
+          width: 590,
+          height: 300,
+          alt: "Hero Image",
+        },
+        title: "At SHOWTIME, we emphasize personalized coaching",
+        paragraph:
+          "But it's not all work and no play – our camp is known for its friendly atmosphere, filled with laughter, teamwork, and the joy of the game. Join us at SHOWTIME Basketball Camp, where your child's passion for basketball will thrive, friendships will blossom, and memories that last a lifetime will be made.",
+      }}
+    />
+  </main>
+  <Footer />
+</Layout>
