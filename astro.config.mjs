@@ -3,7 +3,7 @@ import react from "@astrojs/react";
 import CompressionPlugin from "vite-plugin-compression";
 import sitemap from "@astrojs/sitemap";
 
-export const siteUrl = "https://concept.showtimecamps.com";
+export const siteUrl = "https://showtimecamps.com";
 
 const date = new Date().toISOString();
 // https://astro.build/config
